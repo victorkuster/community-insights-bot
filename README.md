@@ -16,6 +16,14 @@ It processes messages directly from Discord or from exported `.txt` files (Disco
 
 ---
 
+## 🎥 Demo
+
+> Demo sped up for brevity
+
+![Demo](./assets/demo.gif)
+
+---
+
 ## 🧠 LLM Support
 
 This project supports multiple providers:
@@ -54,14 +62,6 @@ This project supports multiple providers:
 
 * Requires API key
 * Useful if you don't have enough hardware for local models
-
----
-
-## 🎥 Demo
-
-> Demo sped up for brevity
-
-![Demo](./assets/demo.gif)
 
 ---
 
