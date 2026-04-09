@@ -14,6 +14,8 @@ Analyze messages directly from Discord or exported `.txt` files (Discord or What
 * Identify recurring topics, questions, and potential issues
 * Understand community sentiment over time
 * Designed for community managers and data-driven insights
+* Handles large volumes of messages through automatic chunking (e.g. 100 messages per batch)
+* Successfully tested with datasets of 2,000+ messages
 
 ---
 
@@ -69,12 +71,22 @@ This project supports multiple providers:
 
 ---
 
+## 🏗️ How it works
+
+1. Messages are collected from Discord or `.txt` files
+2. Data is grouped into smaller chunks to avoid LLM limits
+3. Weekly summaries are generated using a faster model (`gemma3`)
+4. A final consolidation step is performed using a more capable model (`qwen3`)
+5. The result is a structured report with insights, topics, and sentiment
+
+---
+
 ## ⚡ Quick Usage
 
 Once the bot is running:
 
 * Use `/analyze` inside a Discord channel to analyze messages
-* Use `/analyzefile` to upload and analyze `.txt` exports from Discord or WhatsApp conversations.
+* Use `/analyzefile` to upload and analyze `.txt` exports from Discord or WhatsApp conversations
 
 The bot will generate structured summaries with insights, topics, and sentiment.
 
@@ -167,10 +179,31 @@ node src/bot/index.js
 
 ## 📊 Example Output
 
-* Weekly breakdown of discussions
-* Key topics and trends
-* Community sentiment
-* Monthly consolidated insights
+The bot generates structured insights such as:
+
+* 📊 Overview of activity and engagement patterns
+* 🧩 Key discussion topics and trends
+* ❓ Recurring questions from users
+* ⚠️ Potential issues or friction points
+* 💬 Overall community sentiment
+
+---
+
+## 📊 Example Insights
+
+The bot helps surface actionable insights from conversations, such as:
+
+* **Learning difficulties in programming**
+  → Recurring across multiple weeks (Java, Python, React, fundamentals)  
+  → Indicates where users struggle the most, helping prioritize educational content, events, or onboarding improvements
+
+* **Platform-related questions**
+  → Frequent mentions about navigation, courses, and learning paths  
+  → Highlights potential UX issues and opportunities for product improvements
+
+* **Development tools discussions**
+  → Topics like VS Code, Docker, SQL, and automation tools appear consistently  
+  → Suggests strong interest in tooling, which can guide content strategy or integrations
 
 ---
 
