@@ -212,6 +212,7 @@ The bot helps surface actionable insights from conversations, such as:
 * Ollama must be running locally if used
 * OpenAI is optional and requires credits
 * You can change models and provider in `config.js`
+* Short or low-value messages can be filtered out using `minimumMessageLength` (default: 10), helping improve the quality of generated insights
 
 ---
 
