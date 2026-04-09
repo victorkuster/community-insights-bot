@@ -194,16 +194,16 @@ The bot generates structured insights such as:
 The bot helps surface actionable insights from conversations, such as:
 
 * **Learning difficulties in programming**
-  → Recurring across multiple weeks (Java, Python, React, fundamentals)  
-  → Indicates where users struggle the most, helping prioritize educational content, events, or onboarding improvements
+  - Recurring across multiple weeks (Java, Python, React, fundamentals)
+  - Indicates where users struggle the most, helping prioritize educational content, events, or onboarding improvements
 
 * **Platform-related questions**
-  → Frequent mentions about navigation, courses, and learning paths  
-  → Highlights potential UX issues and opportunities for product improvements
+  - Frequent mentions about navigation, courses, and learning paths
+  - Highlights potential UX issues and opportunities for product improvements
 
 * **Development tools discussions**
-  → Topics like VS Code, Docker, SQL, and automation tools appear consistently  
-  → Suggests strong interest in tooling, which can guide content strategy or integrations
+  - Topics like VS Code, Docker, SQL, and automation tools appear consistently
+  - Suggests strong interest in tooling, which can guide content strategy or integrations
 
 ---
 
