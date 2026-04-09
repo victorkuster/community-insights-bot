@@ -139,6 +139,20 @@ node src/bot/index.js
 
 ---
 
+## 🌐 Prompt Language
+
+The default prompts are written in Brazilian Portuguese.
+
+You can customize them in:
+
+- `src/prompts/weeklyPrompt.js`
+- `src/prompts/periodPrompt.js`
+- `src/prompts/monthlyPrompt.js`
+
+To generate outputs in another language, or adapt the analysis for different use cases, you can rewrite these prompt files as needed.
+
+---
+
 ## 📌 Why this project exists
 
 Community data is often noisy and hard to interpret at scale.
