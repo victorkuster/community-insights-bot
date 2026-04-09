@@ -84,7 +84,26 @@ npm install
 
 ---
 
-### 3. Configure environment variables
+### 3. Install and run Ollama
+
+If you plan to use OpenAI instead, you can skip this step.
+
+Download and install Ollama:
+https://ollama.com
+
+Then pull the recommended models:
+
+```bash
+ollama pull gemma3:12b
+ollama pull qwen3:14b
+```
+
+Make sure Ollama is running locally at:
+http://localhost:11434 (default configuration)
+
+---
+
+### 4. Configure environment variables
 
 Copy the example file:
 
@@ -104,11 +123,12 @@ OPENAI_API_KEY=
 
 ---
 
-### 4. Configure LLM provider
+### 5. Configure LLM provider
 
 By default, the bot is already configured to use **Ollama**.
+No changes are required if you followed the setup above.
 
-If you want to change it, edit:
+**If you want to use OpenAI instead**, edit:
 
 ```
 src/config/config.js
@@ -122,7 +142,7 @@ llm: {
 
 ---
 
-### 5. Run the bot
+### 6. Run the bot
 
 ```bash
 node src/bot/index.js
