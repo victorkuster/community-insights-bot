@@ -1,8 +1,8 @@
 # Community Insights Bot
 
-A Discord bot that analyzes community conversations and generates structured insights using LLMs.
+A Discord bot that turns raw community conversations into structured, actionable insights using local LLMs.
 
-It processes messages directly from Discord or from exported `.txt` files (Discord or WhatsApp), organizing discussions into weekly and monthly summaries.
+Analyze messages directly from Discord or exported `.txt` files (Discord or WhatsApp), without token limits or API costs.
 
 ---
 
@@ -11,14 +11,16 @@ It processes messages directly from Discord or from exported `.txt` files (Disco
 * `/analyze` → Analyze messages directly from a Discord channel
 * `/analyzefile` → Analyze exported `.txt` files (Discord or WhatsApp)
 * Weekly and monthly summaries
-* Sentiment and topic clustering
+* Identify recurring topics, questions, and potential issues
+* Understand community sentiment over time
 * Designed for community managers and data-driven insights
 
 ---
 
 ## 🎥 Demo
 
-> Demo of the `/analyze` command (sped up for brevity)
+> Demo of the `/analyze` command (sped up for brevity)  
+> Shows how raw messages are transformed into structured insights
 
 ![Demo](./assets/demo.gif)
 
@@ -67,6 +69,17 @@ This project supports multiple providers:
 
 ---
 
+## ⚡ Quick Usage
+
+Once the bot is running:
+
+* Use `/analyze` inside a Discord channel to analyze messages
+* Use `/analyzefile` to upload and analyze `.txt` exports from Discord or WhatsApp conversations.
+
+The bot will generate structured summaries with insights, topics, and sentiment.
+
+---
+
 ## ⚙️ Setup
 
 ### 1. Clone the repository
@@ -90,7 +103,7 @@ npm install
 
 If you plan to use OpenAI instead, you can skip this step.
 
-Download and install Ollama:
+Download and install Ollama (local LLM runtime):
 https://ollama.com
 
 Then pull the recommended models:
@@ -185,16 +198,14 @@ To generate outputs in another language, or adapt the analysis for different use
 
 ## 📌 Why this project exists
 
-Community data is often noisy and hard to interpret at scale.
+Community conversations generate a huge amount of data, but extracting insights from them is still difficult.
 
-This bot helps transform raw conversations into structured insights, enabling better decisions for:
+Most tools struggle with scale, cost, or context limitations.
 
-* Community managers
-* Product teams
-* Developer relations
+This project was built to solve that by bringing analysis directly into Discord, using local LLMs to enable unlimited, cost-efficient exploration.
 
 ---
 
 ## 📄 License
 
-MIT
+MIT — free to use, modify, and adapt as you see fit.
