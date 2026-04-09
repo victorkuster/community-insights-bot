@@ -57,6 +57,14 @@ This project supports multiple providers:
 
 ---
 
+## 🎥 Demo
+
+> Demo sped up for brevity
+
+![Demo](./assets/demo.gif)
+
+---
+
 ## ⚙️ Setup
 
 ### 1. Clone the repository
