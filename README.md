@@ -31,6 +31,7 @@ This project supports multiple providers:
 ### 🟢 Ollama (default)
 
 * Runs locally (no API cost)
+* Requires Ollama to be installed and running locally
 * Default base URL:
 
   ```
@@ -61,7 +62,8 @@ This project supports multiple providers:
 ### 🔵 OpenAI (optional)
 
 * Requires API key
-* Useful if you don't have enough hardware for local models
+* Useful if you don't have enough hardware to run local models
+* Can be used as an alternative to Ollama
 
 ---
 
