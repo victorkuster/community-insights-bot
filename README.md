@@ -9,7 +9,7 @@ Analyze messages directly from Discord or exported `.txt` files (Discord or What
 ## 🚀 Features
 
 * `/analyze` → Analyze messages directly from a Discord channel
-* `/analyzefile` → Analyze exported `.txt` files (Discord or WhatsApp)
+* `/analyze-file` → Analyze exported `.txt` files (Discord or WhatsApp)
 * Weekly and monthly summaries
 * Identify recurring topics, questions, and potential issues
 * Understand community sentiment over time
@@ -25,6 +25,10 @@ Analyze messages directly from Discord or exported `.txt` files (Discord or What
 > Shows how raw messages are transformed into structured insights
 
 ![Demo](./assets/demo.gif)
+
+> Demo of the `/analyze-file` command (sped up for brevity)  
+
+![Demo2](./assets/demo2.gif)
 
 ---
 
@@ -86,7 +90,7 @@ This project supports multiple providers:
 Once the bot is running:
 
 * Use `/analyze` inside a Discord channel to analyze messages
-* Use `/analyzefile` to upload and analyze `.txt` exports from Discord or WhatsApp conversations
+* Use `/analyze-file` to upload and analyze `.txt` exports from Discord or WhatsApp conversations
 
 The bot will generate structured summaries with insights, topics, and sentiment.
 
