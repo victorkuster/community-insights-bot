@@ -18,7 +18,7 @@ It processes messages directly from Discord or from exported `.txt` files (Disco
 
 ## 🎥 Demo
 
-> Demo sped up for brevity
+> Demo of the `/analyze` command (sped up for brevity)
 
 ![Demo](./assets/demo.gif)
 
