@@ -1,8 +1,10 @@
 # Community Insights Bot
 
-A Discord bot that turns raw community conversations into structured, actionable insights using local LLMs.
+A Discord bot that transforms community conversations into actionable insights for community strategy, live operations, and product decisions.
 
 Analyze messages directly from Discord or exported `.txt` files (Discord or WhatsApp), without token limits or API costs.
+
+Built for large-scale communities and live service environments.
 
 ---
 
@@ -16,6 +18,26 @@ Analyze messages directly from Discord or exported `.txt` files (Discord or What
 * Designed for community managers and data-driven insights
 * Handles large volumes of messages through automatic chunking (e.g. 100 messages per batch)
 * Successfully tested with datasets of 2,000+ messages
+
+---
+
+## 🎯 Real-world Use Case (Community & Live Service Insights)
+
+This bot was designed based on real experience managing large-scale communities (100k+ members), where understanding user behavior and community dynamics at scale is essential.
+
+It helps answer questions like:
+
+- What are the main friction points in the community?
+- What topics are driving engagement or churn?
+- What feedback should be prioritized for product or content decisions?
+
+The tool supports continuous analysis over time (weekly/monthly), enabling:
+
+- Ongoing feedback loops
+- Trend evolution tracking
+- Long-term sentiment monitoring
+
+This mirrors how live service communities evolve, requiring constant adaptation based on user behavior and feedback.
 
 ---
 
